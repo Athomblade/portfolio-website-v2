@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+.textBig{
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    font-size: xx-large;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+#logoImg{
+    text-align: center;
+}
+
+
+.links{
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 1fr 1fr;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.hidden {
+    filter: blur(5px);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+  }
+  
+.show {
+
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+#resume {
+
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 3% 3%;
+  
+  }
+
+  #Text {
+    text-shadow: 2px 2px 20px white;
+    text-align: -webkit-center;
+  }
+
+  #resumetxt {
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 15px;
+  }
+
+  #brz {
+    color: yellow;
+    text-shadow: 2px 2px 1px rgb(11, 211, 11);
+  }
+  
+  #cnd {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 3px rgb(249, 249, 249);
+  }
+  
+  #usa {
+    color: rgb(25, 0, 255);
+    text-shadow: 1px 1px 5px rgb(249, 5, 5);
+  }
+
+  #resumejobinfo {
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  }
+  
+  
+  
+  #resume,#contact ,#endpage{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 2px 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.5px);
+    box-shadow: 2px 2px 10px black;
+    margin: 0.5rem;
+  
+  
+  }
+
+#contact, #endpage{
+  text-shadow: 2px 2px 20px white;
+  text-align: -webkit-center;
+  font-family: 'Bruno Ace SC', cursive;
+  padding: 0.5rem;
+}
+

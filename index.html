@@ -1,0 +1,161 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>Czar Web Dev</title>
+  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+  <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
+
+  <style>
+    * {
+      margin: 0; padding: 0;border: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      background-attachment: fixed;
+    }
+
+    #container {
+      overflow: hidden;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    #background_video {
+      position: absolute;
+
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+      height: 100%; width: 100%;
+    }
+
+    #video_cover {
+      position: absolute;
+
+      width: 100%; height: 100%;
+
+      background: url('video_cover.jpeg') repeat fixed 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #video_controls {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    #play img {
+      width: 100px;
+    }
+    #pause img {
+      width: 90px;
+    }
+    #pause {
+      display: none;
+    }
+    #video_controls {
+        display: none;
+      }
+    @media (min-width: 768px) {
+      #video_controls {
+        display: none;
+      }
+    }
+    #main_content {
+      z-index: 2;
+      position: relative;
+    }
+
+    .margin{
+      margin: 1%;
+    }
+  </style>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://use.typekit.net/nlq1kdt.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+  <div id="container">
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+
+
+    <section id="main_content">
+        <div id="menu" class="hidden">
+            <div id="logoImg">
+                <img class="show" id='logoimage' src="style/imgs/logoart-white.png" alt="CzärLogo" height="70%"
+                    width="70%">
+            </div>
+          <div class="links" >
+            <a class="textBig"  
+                href="index.html">Home</a>
+
+            <a class="textBig"  
+                href="index.html">Skills</a>
+
+            <a class="textBig"  
+                href="index.html">Projects</a>
+
+            <a class="textBig"  
+                href="index.html">Contacts</a>
+          </div>
+         </div>
+         <div id="resume" class="hidden">
+          <div id="Text">
+              <h1>CESAR AUGUSTO</h1>
+              <p id="resumetxt">
+                  I am a highly motivated and skilled Full Stack Web Developer
+                  in love with developing and maintaining web applications.
+                  I am proficient in HTML, CSS, JavaScript, React, Django,Python and SQL,
+                  and have experience working with both front-end and back-end technologies.
+                  I am passionate about developing clean, efficient, and user-friendly applications
+                  that solve real-world problems.
+              <p id="resumetxt">Living in <span id="brz">Brazil</span>, and planning in moving to <span id="usa">USA
+                  </span>or <span id="cnd">Canada</span>.</p>
+              <p id="resumetxt"><span id="resumejobinfo">Computer Science Student Open To Tryouts, Entry-level Jobs and
+                      Internships</span></p>
+  
+              <p id="resumetxt">"Although I may not be the absolute best at everything I do, I am committed to improving
+                  myself every day and becoming better than I was yesterday."</p>
+              </p>
+  
+          </div>
+          <div>
+              <img src="style/imgs/Asset 3.png" alt="ProfilePicture" height="100%" width="100%">
+          </div>
+      </div>
+      <div id="contact">
+        <p>Contact Infos</p>
+        <div class="contactinfo">
+            <p>E-mail: <a href="mailto:cgutanskis@gmail.com?subject=subject text">cgutanskis@gmail.com</a></p>
+        </div>
+        <div class="contactinfo">
+            <p>Whatsapp: <a href="https://wa.me/5517992860554">(17)99286-0554</a></p>
+        </div>
+        <div class="contactinfo">
+            <p>GitHub: <a href="https://github.com/Athomblade">https://github.com/Athomblade</a></p>
+        </div>
+
+    </div>
+    <div id="endpage">
+        <p>Made By Czär</p>
+    </div>
+
+</div>
+  
+  <script src="script/bideo.js"></script>
+  <script src="script/main.js"></script>
+
+  <script>
+    
+  </script>
+</body>
+<script src="script/script.js"></script>
+
+</html>
